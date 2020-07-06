@@ -5,8 +5,20 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:SParcialAP1"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="Menu proyecto" Height="500" Width="500">
     <Grid>
+
+        <StackPanel>
+            <Menu>
+                <MenuItem Header="Registros" Click="MenuItem_Click_1">
+                    <MenuItem Header="rProyecto" Click="MenuItem_Click"/>
+                </MenuItem>
+                <MenuItem Header="Consultas">
+                    <MenuItem Header="Proyecto" Click="MenuItem_Click"/>
+                </MenuItem>
+            </Menu>
+
+        </StackPanel>
 
     </Grid>
 </Window>
