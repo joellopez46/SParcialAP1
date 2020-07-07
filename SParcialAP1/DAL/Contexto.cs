@@ -15,7 +15,7 @@ namespace SParcialAP1.DAL
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.EnableSensitiveDataLogging().UseSqlite(@"Data Source = DATA/DataBase3.db");
+            optionsBuilder.UseSqlite(@"Data Source = DATA/DataBase3.db");
         }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
