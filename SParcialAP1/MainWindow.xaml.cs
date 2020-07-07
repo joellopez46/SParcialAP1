@@ -12,17 +12,30 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using SParcialAP1.UI.Registros;
+using SParcialAP1.UI.Consulta;
 
 namespace SParcialAP1
 {
-    /// <summary>
-    /// Interaction logic for MainWindow.xaml
-    /// </summary>
     public partial class MainWindow : Window
     {
         public MainWindow()
         {
             InitializeComponent();
         }
+
+        private void rRegistroMenuItem_Click(object sender, RoutedEventArgs e)
+        {
+            Registros Reg = new Registros();
+            Reg.Show();
+        }
+
+        private void cConsultaMenuItem_Click(object sender, RoutedEventArgs e)
+        {
+            cRegistro Con = new cRegistro();
+            Con.Show();
+        }
+
+        
     }
 }

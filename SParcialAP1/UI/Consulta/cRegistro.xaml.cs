@@ -1,4 +1,6 @@
-﻿using System;
+﻿using SParcialAP1.BLL;
+using SParcialAP1.Entidades;
+using System;
 using System.Collections.Generic;
 using System.Text;
 using System.Windows;
@@ -21,5 +23,18 @@ namespace SParcialAP1.UI.Consulta
         {
             InitializeComponent();
         }
+        private void ConsultarButton_Click(object sender, RoutedEventArgs e)
+        {
+         
+        } 
     }
 }
+
+
+
+
+
+
+
+
+

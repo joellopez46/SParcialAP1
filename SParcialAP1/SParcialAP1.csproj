@@ -10,6 +10,13 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="DATA\DataBase3.db-shm\**" />
+    <EmbeddedResource Remove="DATA\DataBase3.db-shm\**" />
+    <None Remove="DATA\DataBase3.db-shm\**" />
+    <Page Remove="DATA\DataBase3.db-shm\**" />
+  </ItemGroup>
+
+  <ItemGroup>
     <None Remove="Resources\buscar11.png" />
     <None Remove="Resources\eliminar.jpg" />
     <None Remove="Resources\guardar.png" />
@@ -37,11 +44,14 @@
 
   <ItemGroup>
     <Folder Include="DATA\" />
-    <Folder Include="Entidades\" />
   </ItemGroup>
 
   <ItemGroup>
+    <PackageReference Include="Microsoft.Data.Sqlite.Core" Version="3.1.5" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="3.1.5" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.SQLite" Version="3.1.5" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite.Core" Version="3.1.5" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite.Design" Version="1.1.6" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="3.1.5">
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>

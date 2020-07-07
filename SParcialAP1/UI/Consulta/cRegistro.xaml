@@ -5,8 +5,46 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:SParcialAP1.UI.Consulta"
         mc:Ignorable="d"
-        Title="cRegistro" Height="450" Width="800">
+        Title="Consulta Registro" Height="450" Width="700">
     <Grid>
-        
+        <StackPanel Orientation="Vertical" Margin="0,5,0,0" HorizontalAlignment="Center">
+
+            <StackPanel Orientation="Horizontal" Height="58">
+                <StackPanel>
+                    <Label Content="Desde:"/>
+                    <DatePicker x:Name="DesdeDatePicker"/>
+                </StackPanel>
+
+                <StackPanel Orientation="Vertical" Margin="5,0">
+                    <Label Content="Hasta:" />
+                    <DatePicker x:Name="HastaDatePicker"/>
+                </StackPanel>
+
+                <StackPanel Margin="5,0">
+                    <Label Content="Filtro:" />
+                    <ComboBox x:Name="FiltroComboBox" Width="95" Height="24" >
+                        <ComboBoxItem Content="Todo"/>
+                    </ComboBox>
+                </StackPanel>
+
+                <StackPanel Margin="5,0">
+                    <Label Content="Critero:"/>
+                    <TextBox x:Name="CriterioTextBox" Width="95" Height="24" Margin="0,0,5,0" />
+
+                </StackPanel>
+
+                <Button x:Name="BuscarButton" Height="30" Width="90" Click="ConsultarButton_Click" >
+                    <StackPanel Orientation="Horizontal" >
+                        <Image Source="/Resources/buscar11.png" Width="25"  />
+                        <Label Content="Consultar" Height="25" Width="56" />
+                    </StackPanel>
+                </Button>
+
+            </StackPanel>
+            <StackPanel HorizontalAlignment="Left" >
+                <DataGrid x:Name="DatosDataGrid" Height="350" Width="605"/>
+            </StackPanel>
+        </StackPanel>
+
     </Grid>
 </Window>
